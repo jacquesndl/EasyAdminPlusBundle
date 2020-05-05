@@ -1,0 +1,8 @@
+{% set enumClass = field_options.enumClass %}
+{% set enumTranslationDomain = field_options.enumTranslationDomain|default('messages') %}
+
+{% if value is not null %}
+    {{ value|enum_label(enumClass, enumTranslationDomain) }}
+{% else %}
+    <span class="badge badge-secondary">{{ 'label.null'|trans(domain = 'EasyAdminBundle') }}</span>
+{% endif %}

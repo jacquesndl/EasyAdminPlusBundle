@@ -1,0 +1,36 @@
+{
+    "name": "jacquesndl/easyadmin-plus-bundle",
+    "type": "symfony-bundle",
+    "description": "Jacquesndl/EasyAdminPlusBundle",
+    "keywords": [
+        "Symfony",
+        "Bundle",
+        "Jacquesndl",
+        "Admin",
+        "EasyAdminBundle",
+        "EasyAdminPlusBundle"
+    ],
+    "homepage": "https://github.com/jacquesndl/EasyAdminPlusBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacques de Lamballerie",
+            "email": "jndl@protonmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2",
+        "symfony/framework-bundle": "^4.4|^5.0",
+        "easycorp/easyadmin-bundle": "^2.3"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Jacquesndl\\EasyAdminPlusBundle\\": "src/"
+        }
+    }
+}

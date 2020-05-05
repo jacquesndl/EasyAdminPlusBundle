@@ -1,0 +1,6 @@
+jacquesndl_easy_admin_plus_login:
+    path: /login
+    controller: Jacquesndl\EasyAdminPlusBundle\Controller\SecurityController::login
+
+jacquesndl_easy_admin_plus_logout:
+    path: /logout

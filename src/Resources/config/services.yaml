@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Jacquesndl\EasyAdminPlusBundle\:
+        resource: '../../*'
+        exclude: '../../{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    Jacquesndl\EasyAdminPlusBundle\Controller\:
+        resource: '../../Controller'
+        tags: ['controller.service_arguments']

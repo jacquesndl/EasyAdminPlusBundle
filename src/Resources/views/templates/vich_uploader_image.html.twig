@@ -1,0 +1,12 @@
+{% if value is not null %}
+    {% set uniqid = easy_admin_plus_uniqid() %}
+    <a href="#" class="easyadmin-thumbnail" data-featherlight="#easyadmin-lightbox-{{ uniqid }}"
+       data-featherlight-close-on-click="anywhere">
+        <img src="{{ vich_uploader_asset(item, field_options.propertyFile) }}">
+    </a>
+    <div id="easyadmin-lightbox-{{ uniqid }}" class="easyadmin-lightbox">
+        <img src="{{ vich_uploader_asset(item, field_options.propertyFile) }}">
+    </div>
+{% else %}
+    <span class="badge badge-secondary">{{ 'label.null'|trans(domain = 'EasyAdminBundle') }}</span>
+{% endif %}

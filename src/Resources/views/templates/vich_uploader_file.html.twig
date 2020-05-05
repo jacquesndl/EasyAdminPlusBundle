@@ -1,0 +1,7 @@
+{% if value is not null %}
+    <a href="{{ vich_uploader_asset(item, field_options.propertyFile) }}" title="{{ value }}" target="_blank">
+        {{ value|easyadmin_truncate }}
+    </a>
+{% else %}
+    <span class="badge badge-secondary">{{ 'label.null'|trans(domain = 'EasyAdminBundle') }}</span>
+{% endif %}
